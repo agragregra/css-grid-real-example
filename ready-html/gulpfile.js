@@ -48,7 +48,7 @@ function sass() {
 
 function startwatch() {
 	watch(['app/sass/**/*.sass'], { usePolling: true }, sass)
-	watch(['app/js/common.js', 'libs/**/*.js'], { usePolling: true }, js)
+	watch(['app/js/common.js', 'app/libs/**/*.js'], { usePolling: true }, js)
 	watch(['app/*.html'], { usePolling: true }).on('change', browserSync.reload)
 }
 
